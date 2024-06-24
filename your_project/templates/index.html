@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Graph</title>
+</head>
+<body>
+    <h1 style="background-color:powderblue;"><center>Search Visualization</center></h1>
+    <form method="POST" action="/submit">
+        <label for="nodes">Nodes (comma-separated):</label>
+        <input type="text" id="nodes" name="nodes" required><br><br>
+
+        <label for="edges">Edges (comma-separated, node1-node2):</label>
+        <input type="text" id="edges" name="edges" required><br><br>
+
+        <label for="weights">Weights (comma-separated, node1-node2-weight):</label>
+        <input type="text" id="weights" name="weights" required><br><br>
+
+        <label for="method">Method:</label>
+        <select id="method" name="method">
+            <option value="BFS">BFS</option>
+            <option value="DFS">DFS</option>
+            <option value="Dijkstra">Dijkstra</option>
+        </select><br><br>
+
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" required><br><br>
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
